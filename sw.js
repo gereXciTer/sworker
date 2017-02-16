@@ -12,5 +12,9 @@ console.log('activated');
 
 self.addEventListener('fetch', function(event) {
   console.log('fetch intercepted');
-  event.respondWith(new Response("Hello world!"));
+  event.respondWith(
+    fetch(event.request).catch(function() {
+      return new Response("Request failed!");
+    })
+  );
 });
