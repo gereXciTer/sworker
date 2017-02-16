@@ -9,3 +9,7 @@ self.addEventListener('activate', function(event) {
 console.log('activated');
   // You're good to go!
 });
+
+self.addEventListener('fetch', function(event) {
+  event.respondWith(new Response("Hello world!"));
+});
