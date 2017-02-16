@@ -1,11 +1,11 @@
 self.addEventListener('install', function(event) {
-// console.log('installed');
+console.log('installed');
 //  event.waitUntil(
 //    fetchStuffAndInitDatabases()
 //  );
 });
 
 self.addEventListener('activate', function(event) {
-// console.log('activated');
+console.log('activated');
   // You're good to go!
 });
