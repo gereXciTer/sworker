@@ -11,5 +11,6 @@ console.log('activated');
 });
 
 self.addEventListener('fetch', function(event) {
+  console.log('fetch intercepted');
   event.respondWith(new Response("Hello world!"));
 });
